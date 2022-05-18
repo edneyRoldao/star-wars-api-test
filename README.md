@@ -49,4 +49,4 @@ sudo docker run -d -p 8080:8080 -t star-wars-api-java-container:1.0
 - I've added an Exception handler to deal with http request errors
 
 ## Notes
-- I wasn't able to test FeignClient and Converter due to no time available.
+- I wasn't able to test FeignClient and Converter due to have no time available.
