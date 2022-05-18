@@ -1,11 +1,9 @@
 package com.test.starwarsapi.response;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -19,15 +17,14 @@ public class FilmDetailResponse implements Serializable {
     private String title;
     private String director;
     private String producer;
-    private LocalDateTime edited;
-    private LocalDateTime created;
+    private String edited;
+    private String created;
 
     @JsonProperty("opening_crawl")
     private String openingCrawl;
 
-    @JsonFormat(pattern = "yyyy-MM-dd")
     @JsonProperty("release_date")
-    private LocalDate releaseDate;
+    private String releaseDate;
 
     @JsonProperty("episode_id")
     private Long episodeId;
@@ -37,4 +34,9 @@ public class FilmDetailResponse implements Serializable {
     private List<String> starships;
     private List<String> vehicles;
     private List<String> species;
+
+    public void updateVersion() {
+        version++;
+    }
+
 }

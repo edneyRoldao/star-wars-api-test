@@ -3,10 +3,12 @@ package com.test.starwarsapi.service.impl;
 import com.test.starwarsapi.aspect.annotation.Logger;
 import com.test.starwarsapi.converter.UpdateFilmRequestConverter;
 import com.test.starwarsapi.exception.FilmNotFoundException;
+import com.test.starwarsapi.exception.FilmValidationException;
 import com.test.starwarsapi.request.UpdateFilmRequest;
 import com.test.starwarsapi.response.FilmDetailResponse;
 import com.test.starwarsapi.response.FilmsResponse;
 import com.test.starwarsapi.service.FilmService;
+import org.apache.commons.lang3.StringUtils;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -35,9 +37,12 @@ public class FilmServiceImpl implements FilmService {
     @Override
     public void updateFilmDescription(Long episodeId, String description) {
         var film = getFilteredFilm(episodeId);
+
+        validateUpdateDescription(description, film);
+
         film.setDescription(description);
-        film.setEdited(LocalDateTime.now());
-        film.setVersion(film.getVersion() + 1);
+        film.setEdited(LocalDateTime.now().toString());
+        film.updateVersion();
     }
 
     @Logger
@@ -45,7 +50,15 @@ public class FilmServiceImpl implements FilmService {
     public void updateFilmDetails(Long episodeId, UpdateFilmRequest request) {
         var film = getFilteredFilm(episodeId);
         UpdateFilmRequestConverter converter = new UpdateFilmRequestConverter();
-        converter.apply(request, film);
+        var filmUpdated = converter.apply(request, film);
+    }
+
+    private void validateUpdateDescription(String description, FilmDetailResponse film) {
+        if (StringUtils.isBlank(description))
+            throw new FilmValidationException("The film description should not be empty");
+
+        if (description.equalsIgnoreCase(film.getDescription()))
+            throw new FilmValidationException("The film description should not be the same as the old one");
     }
 
     private FilmDetailResponse getFilteredFilm(Long id) {

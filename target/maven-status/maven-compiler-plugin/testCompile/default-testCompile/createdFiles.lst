@@ -1,0 +1,3 @@
+com/test/starwarsapi/api/StarWarsResourceTest.class
+com/test/starwarsapi/service/impl/FilmServiceImplTest.class
+com/test/starwarsapi/BaseTest.class

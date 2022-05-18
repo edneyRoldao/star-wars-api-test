@@ -42,3 +42,11 @@ sudo docker run -d -p 8080:8080 -t star-wars-api-java-container:1.0
 - Criar um endpoint onde é possível detalhar um filme especifico
   - não sei se tive o entendimento correto desse task.
   - Eu entendi que eu devo prover um servico que permite alterar todos os campos do filme.
+
+## Extra Features
+- I've added unit tests using JUnit5, Mockito and MockMvc
+- I've added an Aspect to log all processes
+- I've added an Exception handler to deal with http request errors
+
+## Notes
+- I wasn't able to test FeignClient and Converter due to no time available.
