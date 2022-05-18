@@ -1,0 +1,17 @@
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/exception/FilmNotFoundException.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/api/StarWarsResource.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/config/FilmSingleConfig.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/response/FilmDetailResponse.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/request/UpdateFilmRequest.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/converter/UpdateFilmRequestConverter.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/config/AppConfig.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/aspect/LoggingMethodAspect.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/config/AppExceptionHandler.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/util/SwaggerMessages.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/service/FilmService.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/aspect/annotation/SkipLog.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/aspect/annotation/Logger.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/response/FilmsResponse.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/service/impl/FilmServiceImpl.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/StarWarsApiApplication.java
+/home/edneyroldao/workspace/personal/java-projects/star-wars-api-test/src/main/java/com/test/starwarsapi/client/StarWarsAPIClient.java

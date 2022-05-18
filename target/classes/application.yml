@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+feign:
+  client:
+    config:
+      star-wars-api:
+        connectTimeout: 15000
+        readTimeout: 15000
+        loggerLevel: basic
+
+app:
+  star-wars-api:
+    host: https://swapi.dev

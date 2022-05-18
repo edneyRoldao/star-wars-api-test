@@ -1,0 +1,17 @@
+com/test/starwarsapi/StarWarsApiApplication.class
+com/test/starwarsapi/client/StarWarsAPIClient.class
+com/test/starwarsapi/response/FilmDetailResponse.class
+com/test/starwarsapi/config/AppExceptionHandler.class
+com/test/starwarsapi/config/FilmSingleConfig.class
+com/test/starwarsapi/service/impl/FilmServiceImpl.class
+com/test/starwarsapi/util/SwaggerMessages.class
+com/test/starwarsapi/aspect/annotation/Logger.class
+com/test/starwarsapi/aspect/LoggingMethodAspect.class
+com/test/starwarsapi/config/AppConfig.class
+com/test/starwarsapi/converter/UpdateFilmRequestConverter.class
+com/test/starwarsapi/aspect/annotation/SkipLog.class
+com/test/starwarsapi/api/StarWarsResource.class
+com/test/starwarsapi/service/FilmService.class
+com/test/starwarsapi/exception/FilmNotFoundException.class
+com/test/starwarsapi/response/FilmsResponse.class
+com/test/starwarsapi/request/UpdateFilmRequest.class
